@@ -1,0 +1,40 @@
+[package]
+name = "mapp"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+yew = { version = "0.20.0", features = ["csr"] }
+gloo = "0.8.0"
+serde = "1.0.147"
+serde_json = "1.0.88"
+wasm-bindgen = "0.2.83"
+gloo-file = "0.2.3"
+js-sys = "0.3.60"
+chrono = "0.4.23"
+
+[dependencies.web-sys]
+version = "0.3.60"
+features = [
+  "HtmlInputElement",
+  "BinaryType",
+  "Blob",
+  "ErrorEvent",
+  "FileReader",
+  "MessageEvent",
+  "ProgressEvent",
+  "WebSocket",
+  "Window",
+  "IdbFactory",
+  "IdbOpenDbRequest",
+  "IdbRequest",
+  "IdbDatabase",
+  "IdbObjectStore",
+  "IdbIndex",
+  "IdbTransactionMode",
+  "IdbTransaction",
+  "Element",
+  "Document",
+]
