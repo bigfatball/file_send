@@ -1,0 +1,3 @@
+[workspace]
+members = ["web", "app","abc","mapp"]
+default-members = ["web"]
